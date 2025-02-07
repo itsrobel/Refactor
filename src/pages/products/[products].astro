@@ -1,0 +1,20 @@
+---
+// Initialize tRPC client
+
+// Extract productId from URL params
+const productId = Astro.params.products;
+console.log(Astro.params.products)
+import ProductCard from "@/components/store/ProductCard.astro"; // Adjust path as needed
+import {trpcAstro } from "@/client/trpcAstro"
+import Layout from '@/layouts/Layout.astro';
+
+const product = await trpcAstro.get_product_by_id.query({id:productId.toString()})
+---
+
+<Layout>
+    <ProductCard 
+      imageSrc={product.img_src}
+      productName={product.name}
+      price={product.price}
+    />
+</Layout>

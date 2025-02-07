@@ -9,6 +9,19 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.2.5"
+    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/vercel": "^8.0.6",
+    "@trpc/client": "^10.45.2",
+    "@trpc/server": "^10.45.2",
+    "astro": "^5.2.5",
+    "superjson": "^2.2.2",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.4",
+    "autoprefixer": "^10.4.20",
+    "daisyui": "^5.0.0-beta.7",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.4"
   }
 }

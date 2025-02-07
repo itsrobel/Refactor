@@ -1,0 +1,29 @@
+---
+// Frontmatter section for defining props
+const { imageSrc, productName, price, id } = Astro.props;
+---
+<figure>
+<a href={`/products/${id}`}>
+  <img
+    class="w-full rounded-3xl shadow-2xl"
+    src={imageSrc}
+    alt={productName}
+    width="1310"
+    height="873"
+  />
+  <div class="mt-4 flex justify-between px-6">
+    <div>
+      <h3 class="text-sm text-negroni-500">
+        <!-- <a href="#"> -->
+          <span aria-hidden="true" class="absolute inset-0"></span>
+          {productName}
+        <!-- </a> -->
+      </h3>
+      <p class="mt-1 text-lg font-medium leading-6 text-white">
+        Olive green / Orange
+      </p>
+    </div>
+    <p class="text-base text-tomato-500">${price}</p>
+  </div>
+</a>
+</figure>

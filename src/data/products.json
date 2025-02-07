@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "name": "Basic Tee Bag",
+      "price": "33",
+      "img_src": "https://cdn.dribbble.com/users/1622978/screenshots/16873134/media/8ea407efd5f947aa6a37488cfe305269.jpg?compress=1&resize=1600x1200&vertical=top",
+      "id": "1"
+    },
+    {
+      "name": "Paper bags with print",
+      "price": "3",
+      "img_src": "https://cdn.dribbble.com/users/1622978/screenshots/16873134/media/7f5d72bce5b94fe1ae56484394de673f.jpg?compress=1&resize=1600x1200&vertical=top",
+      "id": "2"
+    },
+    {
+      "name": "Coffe bag",
+      "price": "35",
+      "img_src": "https://cdn.dribbble.com/users/1622978/screenshots/16397986/media/75e59a9fcf94b8a51764df66ce7a1d4f.jpg?compress=1&resize=1600x1200&vertical=top",
+      "id": "3"
+    },
+    {
+      "name": "Coffe bag",
+      "price": "35",
+      "img_src": "https://cdn.dribbble.com/userupload/2739254/file/original-ac8226a7213611e49363fc0176a48cb0.jpg?compress=1&resize=1504x1128",
+      "id": "4"
+    }
+  ]
+}

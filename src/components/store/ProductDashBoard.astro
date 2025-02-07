@@ -1,0 +1,21 @@
+---
+import ProductCard from '@/components/store/ProductCard.astro';
+import {trpcAstro } from "@/client/trpcAstro"
+const products = await trpcAstro.get_products.query()
+---
+<main>
+  <div class="relative mx-auto px-8 max-w-7xl py-12   md:px-12">
+    <div
+      class="grid grid-cols-1 gap-6 lg:gap-y-32 md:grid-cols-2 ">
+      {
+        products.map(product => (
+        <ProductCard 
+          imageSrc={product.img_src}
+          productName={product.name}
+          price={product.price}
+          id={product.id}
+        />
+      ))}
+    </div>
+  </div>
+</main>
